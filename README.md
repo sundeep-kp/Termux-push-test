@@ -32,6 +32,7 @@ user@iiitnr:~/termux_git_test$ ./init_system.sh
 
 ```
  ![Terminal Screenshot](screenshot.jpg)
+ ```
 instructions to replicate --
 : I used pkg install git
   pkg install micro git -v
@@ -64,3 +65,4 @@ then just
 	git commit -m "pushing from termux, its much work to attach a screenshot tho"
 
 	git push -u origin main
+```
