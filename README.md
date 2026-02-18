@@ -30,25 +30,37 @@ user@iiitnr:~/termux_git_test$ ./init_system.sh
 > initializing_repo... done.
 > welcome_back_sundeep.
 
-![Terminal Screenshot](screenshot.jpg)
-
+```
+ ![Terminal Screenshot](screenshot.jpg)
 instructions to replicate --
-Can you write me an example repo for testing out git push from termux for the first time ? Like a really cool visual in readme.. context: I used pkg install git
-   20  pkg install micro git -v
-      19  git -h
-         20  git config --global user.name "username"
-            21  git config --global user.email "<email>"
-               22  git config user.name
-                  23  ssh-keygen -t rsa -C "email"
-                     24  cat ~/.ssh/id_rsa.pub | termux-clipboard-set
-                        25  pkg install termux-api
-                           26  cat ~/.ssh/id_rsa.pub | termux-clipboard-set
-                              27  ssh -T git@github.com
-                                 28  ls
-                                    29  cd storage/
-                                       30  ls
-                                          31  cd downloads
-                                             32  ls
-                                                33  cd ..
-                                                   34  mkdir termux_git_test
-                                                      35  cd termux_git_test/
+: I used pkg install git
+  pkg install micro git -v
+   git -h
+   git config --global user.name "username"
+   git config --global user.email "<email>"
+   git config user.name
+   ssh-keygen -t rsa -C "email"
+   cat ~/.ssh/id_rsa.pub | termux-clipboard-set
+   pkg install termux-api
+   cat ~/.ssh/id_rsa.pub | termux-clipboard-set
+   ssh -T git@github.com
+   ls
+   cd storage/ {first mount your internal storage if you haven't else you may skip this and continue the steps on termux default directory instead}
+   
+  
+  
+   34  mkdir termux_git_test
+   35  cd termux_git_test/
+
+   here make your readme.md using a code editor(i am using micro -- so simply micro README.md)
+
+then just 
+	git remote add origin git@github.com:sundeep-kp/Termux-push-test.git
+
+	or if you messed up add origin then 
+	git remote set-url origin git@github.com:sundeep-kp/Termux-push-test.git
+
+	git add . 
+	git commit -m "pushing from termux, its much work to attach a screenshot tho"
+
+	git push -u origin main
