@@ -1,4 +1,5 @@
 # Termux-push-test
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=33E9FF&center=true&vCenter=true&width=435&lines=Hello+Sundeep-kp!;Termux+Setup+Complete...;System+Status:+ONLINE;Ready+to+Code." alt="Typing SVG" />
@@ -29,6 +30,7 @@ user@iiitnr:~/termux_git_test$ ./init_system.sh
 > initializing_repo... done.
 > welcome_back_sundeep.
 
+![Terminal Screenshot](screenshot.jpg)
 
 instructions to replicate --
 Can you write me an example repo for testing out git push from termux for the first time ? Like a really cool visual in readme.. context: I used pkg install git
